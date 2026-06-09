@@ -50,45 +50,49 @@ export default function MediaSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-2 gap-4">
+<div className="grid grid-cols-2 gap-5">
 
-            <div className="relative h-[250px] rounded-3xl overflow-hidden">
-              <Image
-                src="/images/media1.jpg"
-                alt="Culte"
-                fill
-                className="object-cover hover:scale-110 transition duration-700"
-              />
-            </div>
+  <div className="relative h-[320px] rounded-3xl overflow-hidden">
+    <Image
+      src="https://res.cloudinary.com/dukqurtfw/image/upload/v1780971481/WhatsApp_Image_2026-06-09_at_03.00.15_oablvt.jpg"
+      alt="Culte"
+      fill
+      className="object-cover hover:scale-110 transition duration-700"
+    />
+  </div>
 
-            <div className="relative h-[180px] rounded-3xl overflow-hidden mt-10">
-              <Image
-                src="/images/media2.jpg"
-                alt="Louange"
-                fill
-                className="object-cover hover:scale-110 transition duration-700"
-              />
-            </div>
+  <div className="flex flex-col gap-5">
 
-            <div className="relative h-[180px] rounded-3xl overflow-hidden -mt-6">
-              <Image
-                src="/images/media3.jpg"
-                alt="Prédication"
-                fill
-                className="object-cover hover:scale-110 transition duration-700"
-              />
-            </div>
+    <div className="relative h-[150px] rounded-3xl overflow-hidden">
+      <Image
+        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1780971152/img4_sfukmt.jpg"
+        alt="Louange"
+        fill
+        className="object-cover hover:scale-110 transition duration-700"
+      />
+    </div>
 
-            <div className="relative h-[250px] rounded-3xl overflow-hidden">
-              <Image
-                src="/images/media4.jpg"
-                alt="Communauté"
-                fill
-                className="object-cover hover:scale-110 transition duration-700"
-              />
-            </div>
+    <div className="relative h-[150px] rounded-3xl overflow-hidden">
+      <Image
+        src="https://res.cloudinary.com/dukqurtfw/image/upload/v1780971153/img3_jjeleb.jpg"
+        alt="Prédication"
+        fill
+        className="object-cover hover:scale-110 transition duration-700"
+      />
+    </div>
 
-          </div>
+  </div>
+
+  <div className="relative h-[180px] rounded-3xl overflow-hidden col-span-2">
+    <Image
+      src="https://res.cloudinary.com/dukqurtfw/image/upload/v1780971152/img2_myswjw.jpg"
+      alt="Communauté"
+      fill
+      className="object-cover hover:scale-110 transition duration-700"
+    />
+  </div>
+
+</div>
 
           {/* Accent design */}
           <div className="absolute hidden lg:block w-32 h-32 border-4 border-[#980d0e]/20 rounded-full -translate-x-10 -translate-y-10"></div>

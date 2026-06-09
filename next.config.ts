@@ -11,7 +11,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'ce.church',
       },
-      // Ajoute ici d'autres domaines si besoin
+      {
+        protocol: 'https',
+        hostname: 'www.shutterstock.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
     ],
   },
 };
