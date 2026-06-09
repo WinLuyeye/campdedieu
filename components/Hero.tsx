@@ -9,20 +9,20 @@ const Hero = () => {
 
   const slides = [
     {
-      title: "Bienvenue a L'Églises le Camp de Jésus-Christ",
+      title: "Bienvenue à l’Église Le Camp de Jésus-Christ",
       ghost: "Bienvenue",
       description:
         "Une communauté centrée sur Christ, ouverte à tous, pour grandir dans la foi, l’amour et la vérité de l’Évangile.",
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80",
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2069&q=80",
     },
     {
       title: "Allez partout dans le monde",
-      ghost: "Disciples",
+      ghost: "Mission",
       description:
         "« Allez partout dans le monde et faites de toutes les nations des disciples... » — Matthieu 28:19",
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80",
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2069&q=80",
     },
     {
       title: "Une communauté unie en Christ",
@@ -30,7 +30,7 @@ const Hero = () => {
       description:
         "Grandir ensemble dans la foi, l’amour fraternel et la présence de Dieu au quotidien.",
       image:
-        "https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80",
+        "https://images.unsplash.com/photo-1511649475669-e288648b2339?auto=format&fit=crop&w=2071&q=80",
     },
   ];
 
@@ -38,14 +38,13 @@ const Hero = () => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
+
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Logo */}
-
-      {/* Slides */}
+      {/* Background slides */}
       {slides.map((slide, index) => (
         <motion.div
           key={index}
@@ -59,7 +58,6 @@ const Hero = () => {
             initial={{ scale: 1.05 }}
             animate={{
               scale: index === currentSlide ? 1 : 1.05,
-              x: index === currentSlide ? 0 : 20,
             }}
             transition={{ duration: 6, ease: "easeInOut" }}
           />
@@ -67,87 +65,71 @@ const Hero = () => {
         </motion.div>
       ))}
 
-      {/* Content - Centré */}
-      <div className="relative z-10 h-full flex items-center justify-center">
-        <div className="max-w-4xl mx-auto px-6 w-full text-center">
-          {/* Ghost Text */}
+      {/* Content */}
+      <div className="relative z-10 h-full flex items-center justify-center text-center">
+        <div className="max-w-4xl px-6 w-full">
+
+          {/* Ghost text */}
           <motion.h1
             key={slides[currentSlide].ghost}
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.05 }}
             transition={{ duration: 1 }}
-            className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[120px] lg:text-[200px] font-extrabold text-white uppercase leading-none pointer-events-none select-none whitespace-nowrap"
+            className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[120px] lg:text-[200px] font-extrabold text-white uppercase pointer-events-none whitespace-nowrap"
           >
             {slides[currentSlide].ghost}
           </motion.h1>
 
-          <div className="relative">
-            {/* Title */}
-            <motion.h2
-              key={slides[currentSlide].title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[60px] font-bold tracking-[-2px] text-white leading-tight mb-6"
-            >
-              {slides[currentSlide].title}
-            </motion.h2>
+          {/* Title */}
+          <motion.h2
+            key={slides[currentSlide].title}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
+          >
+            {slides[currentSlide].title}
+          </motion.h2>
 
-            {/* Description */}
-            <motion.p
-              key={slides[currentSlide].description}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-sm sm:text-base md:text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
-            >
-              {slides[currentSlide].description}
-            </motion.p>
+          {/* Description */}
+          <motion.p
+            key={slides[currentSlide].description}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-sm sm:text-base md:text-lg text-gray-300 mb-10 max-w-2xl mx-auto"
+          >
+            {slides[currentSlide].description}
+          </motion.p>
 
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="flex flex-wrap gap-4 justify-center"
+          {/* CTA */}
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/decouvrir"
+              className="bg-white text-[#0a1525] px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
             >
-              <motion.button
-                className="cursor-pointer bg-white text-[#0a1525] px-6 py-2.5 sm:px-7 sm:py-3 text-xs sm:text-sm font-semibold rounded-full"
-                whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 120 }}
-              >
-                <Link href="/decouvrir">Découvrir l&lsquo;Église</Link>
-              </motion.button>
+              Découvrir l’Église
+            </Link>
 
-              <motion.button
-                className="cursor-pointer border-2 border-white text-white px-6 py-2.5 sm:px-7 sm:py-3 text-xs sm:text-sm font-semibold rounded-full"
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "white",
-                  color: "#0a1525",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 120, delay: 0.1 }}
-              >
-                <Link href="/contact">Nous contacter</Link>
-              </motion.button>
-            </motion.div>
+            <Link
+              href="/contact"
+              className="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0a1525] transition"
+            >
+              Nous contacter
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Slide indicators */}
+      {/* Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3">
         {slides.map((_, index) => (
-          <motion.button
+          <button
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`h-1.5 rounded-full transition-all ${
               index === currentSlide ? "w-8 bg-white" : "w-4 bg-white/40"
             }`}
-            whileHover={{ scale: 1.3 }}
-            transition={{ type: "spring", stiffness: 300 }}
           />
         ))}
       </div>
