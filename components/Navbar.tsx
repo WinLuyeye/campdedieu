@@ -32,7 +32,7 @@ const Navbar = () => {
 
   if (!mounted) {
     return (
-      <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             <Link href="/" className="flex-shrink-0">
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="relative text-sm lg:text-base font-medium text-white group"
+                  className="relative text-sm lg:text-base font-medium text-black group"
                 >
                   {link.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#cf9001] transition-all duration-300 group-hover:w-full"></span>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center">
               <Link
                 href="/don"
-                className="rounded-full border border-white/30 bg-white/10 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-white/20"
+                className="rounded-full border border-white/30 bg-[#980d0e] px-3 py-1.5 text-sm font-medium text-white transition hover:opacity-90"
               >
                 Faire un don
               </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white"
+                className="text-black"
               >
                 <svg
                   className="h-6 w-6"
@@ -98,23 +98,13 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          isScrolled || isMobileMenuOpen
-            ? "bg-white shadow-lg"
-            : "bg-transparent"
-        }`}
+        className="fixed top-0 left-0 w-full z-50 bg-white shadow-lg transition-all duration-500"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             {/* LOGO */}
             <Link href="/" className="flex-shrink-0">
-              <div
-                className={`relative transition-all duration-500 ${
-                  isScrolled || isMobileMenuOpen
-                    ? "w-36 md:w-48 h-12 md:h-14"
-                    : "w-40 md:w-52 h-12 md:h-16"
-                }`}
-              >
+              <div className="relative w-36 md:w-48 h-12 md:h-14 transition-all duration-500">
                 <Image
                   src="/logo1.png"
                   alt="Logo"
@@ -131,9 +121,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`relative text-sm lg:text-base font-medium transition-colors duration-200 group ${
-                    isScrolled || isMobileMenuOpen ? "text-black" : "text-white"
-                  }`}
+                  className="relative text-sm lg:text-base font-medium text-black transition-colors duration-200 group"
                 >
                   {link.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#08367a] transition-all duration-300 group-hover:w-full"></span>
@@ -141,15 +129,11 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* DON BUTTON DESKTOP */}
+            {/* DON BUTTON */}
             <div className="hidden md:flex items-center">
               <Link
                 href="/donner"
-                className={`rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-                  isScrolled || isMobileMenuOpen
-                    ? "bg-[#980d0e] text-white hover:opacity-90"
-                    : "bg-[#980d0e] text-white hover:opacity-90"
-                }`}
+                className="rounded-full px-3 py-1.5 text-sm font-semibold bg-[#980d0e] text-white hover:opacity-90 transition"
               >
                 Faire un don
               </Link>
@@ -159,9 +143,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`focus:outline-none transition-all duration-200 z-50 relative ${
-                  isScrolled || isMobileMenuOpen ? 'text-black' : 'text-white'
-                }`}
+                className="text-black focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"
@@ -218,11 +200,11 @@ const Navbar = () => {
             <div className="h-px bg-gray-200 my-4" />
 
             <Link
-  href="/donner"
-  className="block text-center py-4 font-semibold text-white bg-[#980d0e] rounded-lg mx-4 hover:opacity-90 transition"
->
-  Faire un don
-</Link>
+              href="/donner"
+              className="block text-center py-4 font-semibold text-white bg-[#980d0e] rounded-lg mx-4 hover:opacity-90 transition"
+            >
+              Faire un don
+            </Link>
           </div>
         </div>
       </div>
