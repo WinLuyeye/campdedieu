@@ -47,7 +47,7 @@ export default function ServicesSection() {
           >
             <div className="relative overflow-hidden rounded-2xl h-[260px]">
               <Image
-                src="https://ce.church/wp-content/uploads/2025/05/491494919_18366630103130005_1289267456907132287_n.jpg"
+                src="/"
                 alt="Culte mardi"
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"
@@ -69,7 +69,7 @@ export default function ServicesSection() {
           >
             <div className="relative overflow-hidden rounded-2xl h-[260px]">
               <Image
-                src="https://ce.church/wp-content/uploads/2025/05/488596227_18364483168130005_2047604868094612484_n.jpg"
+                src="/"
                 alt="Culte jeudi"
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"
@@ -91,7 +91,7 @@ export default function ServicesSection() {
           >
             <div className="relative overflow-hidden rounded-2xl h-[260px]">
               <Image
-                src="https://ce.church/wp-content/uploads/2025/05/491447938_18365841799130005_1665904497654148783_n.jpg"
+                src="/"
                 alt="Culte dimanche"
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"

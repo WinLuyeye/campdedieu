@@ -4,7 +4,8 @@ import AboutSection from '@/components/AboutSection';
 import VisionSection from '@/components/VisionSection';
 import ServicesSection from '@/components/ServicesSection';
 import MediaSection from '@/components/MediaSection';
-import TestimoniesSection from '@/components/TestimoniesSection';
+import ContactSection from '@/components/ContactSection';
+import CTASection from '@/components/CTASection';
 
 
 export default function Home() {
@@ -15,6 +16,8 @@ export default function Home() {
       <MediaSection />
       <VisionSection />
       <ServicesSection />
+      <CTASection />
+      <ContactSection />
       {/* <TestimoniesSection /> */}
     </main>
   );
