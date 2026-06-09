@@ -11,10 +11,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Accueil", href: "/" },
-    { name: "Découvrir", href: "/Decouvrir" },
-    { name: "Qui sommes-nous ?", href: "/Qui-sommes-nous" },
-    { name: "Ressources", href: "/Ressources" },
-    { name: "Médias", href: "/Medias" },
+    { name: "Découvrir", href: "/decouvrir" },
+    { name: "Qui sommes-nous ?", href: "/qui-sommes-nous" },
+    { name: "Ressources", href: "/ressources" },
+    { name: "Médias", href: "/medias" },
   ];
 
   useEffect(() => {
