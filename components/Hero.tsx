@@ -14,7 +14,7 @@ const Hero = () => {
       description:
         "Une communauté centrée sur Christ, ouverte à tous, pour grandir dans la foi, l’amour et la vérité de l’Évangile.",
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2069&q=80",
+        "https://res.cloudinary.com/dukqurtfw/image/upload/v1781048578/WhatsApp_Image_2026-06-10_at_00.39.11_vjtzjv.jpg",
     },
     {
       title: "Allez partout dans le monde",
@@ -22,7 +22,7 @@ const Hero = () => {
       description:
         "« Allez partout dans le monde et faites de toutes les nations des disciples... » — Matthieu 28:19",
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2069&q=80",
+        "https://res.cloudinary.com/dukqurtfw/image/upload/v1780971152/img5_trequ2.jpg",
     },
     {
       title: "Une communauté unie en Christ",
@@ -30,7 +30,7 @@ const Hero = () => {
       description:
         "Grandir ensemble dans la foi, l’amour fraternel et la présence de Dieu au quotidien.",
       image:
-        "https://images.unsplash.com/photo-1511649475669-e288648b2339?auto=format&fit=crop&w=2071&q=80",
+        "https://res.cloudinary.com/dukqurtfw/image/upload/v1781048656/WhatsApp_Image_2026-06-10_at0.39.11_zxkbfd.jpg",
     },
   ];
 

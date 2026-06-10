@@ -57,7 +57,7 @@ const AboutSection = () => {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-xl h-[400px]">
             <Image
-              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
+              src="https://res.cloudinary.com/dukqurtfw/image/upload/v1781048578/WhatsApp_Image_2026-06-10_at_00.39.11_vjtzjv.jpg"
               alt="Église"
               fill
               className="object-cover"

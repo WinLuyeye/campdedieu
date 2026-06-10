@@ -25,11 +25,11 @@ export default function MediaSection() {
       alt: 'Prédication',
     },
     {
-      src: 'https://res.cloudinary.com/dukqurtfw/image/upload/v1780971152/img2_myswjw.jpg',
+      src: 'https://res.cloudinary.com/dukqurtfw/image/upload/v1780971152/img5_trequ2.jpg',
       alt: 'Communauté',
     },
     {
-      src: 'https://res.cloudinary.com/dukqurtfw/image/upload/v1780971152/img1_zjxkqf.jpg',
+      src: 'https://res.cloudinary.com/dukqurtfw/image/upload/v1781049363/WhatsApp_Image_2026-06-10_at_00.50.49_q6u80c.jpg',
       alt: 'Événement',
     },
   ];
