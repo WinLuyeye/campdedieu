@@ -47,7 +47,7 @@ export default function ServicesSection() {
           >
             <div className="relative overflow-hidden rounded-2xl h-[260px]">
               <Image
-                src="/"
+                src="https://res.cloudinary.com/dukqurtfw/image/upload/v1781051046/WhatsApp_Image_2026-06-10_at_01.10.10_ycuhs5.jpg"
                 alt="Culte mardi"
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"
@@ -69,7 +69,7 @@ export default function ServicesSection() {
           >
             <div className="relative overflow-hidden rounded-2xl h-[260px]">
               <Image
-                src="/"
+                src="https://res.cloudinary.com/dukqurtfw/image/upload/v1781051046/WhatsApp_Image_2026-06-10_at_01.10.09_fd4knp.jpg"
                 alt="Culte jeudi"
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"
@@ -91,7 +91,7 @@ export default function ServicesSection() {
           >
             <div className="relative overflow-hidden rounded-2xl h-[260px]">
               <Image
-                src="/"
+                src="https://res.cloudinary.com/dukqurtfw/image/upload/v1781048578/WhatsApp_Image_2026-06-10_at_00.39.11_vjtzjv.jpg"
                 alt="Culte dimanche"
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"

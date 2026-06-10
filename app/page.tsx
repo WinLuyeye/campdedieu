@@ -18,7 +18,6 @@ export default function Home() {
       <ServicesSection />
       <CTASection />
       <ContactSection />
-      {/* <TestimoniesSection /> */}
     </main>
   );
 }
