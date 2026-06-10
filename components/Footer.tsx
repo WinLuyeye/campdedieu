@@ -20,8 +20,6 @@ export default function Footer() {
     { name: "Découvrir", href: "/decouvrir" },
     { name: "Qui sommes-nous ?", href: "/qui-sommes-nous" },
     { name: "Ressources", href: "/ressources" },
-    { name: "Médias", href: "/medias" },
-    { name: "FAQ", href: "/faq" },
   ];
 
   const iconVariants = {
