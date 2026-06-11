@@ -25,7 +25,7 @@ const fadeInRight = {
 
 export default function DonationPage() {
   return (
-    <main className="min-h-screen bg-gray-50 pt-20">
+    <main className="min-h-screen bg-gray-50">
             {/* Section 4: Hero/Bannière finale */}
       <section className="relative py-20 lg:py-28 bg-[#08367a] overflow-hidden">
         {/* Formes décoratives */}
