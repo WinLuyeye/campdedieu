@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* FONTS */
+:root {
+  --font-body: 'Mulish', sans-serif;
+  --font-title: 'Mulish', sans-serif;
+}
+
+/* BODY */
+body {
+  font-family: var(--font-body);
+}
+
+/* TITRES */
+h1, h2, h3 {
+  font-family: var(--font-title);
+  letter-spacing: -0.3px;
+  font-weight: 600;
+}
+
+/* TEXTE */
+p {
+  line-height: 1.7;
+}
+
+/* BOUTONS */
+button {
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
