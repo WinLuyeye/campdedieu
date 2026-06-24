@@ -27,16 +27,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="inline-block px-4 py-2 bg-[#980d0e] text-white rounded-full text-sm font-semibold mb-6"
-          >
-            Bienvenue au Camp de Jésus-Christ
-          </motion.div>
-
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             Découvrez une
             <span className="text-[#cf9001] block">communauté vivante</span>
           </h1>
