@@ -11,7 +11,7 @@ import VieEgliseSection from "@/components/decouvrir/VieEgliseSection";
 
 export default function DecouvrirPage() {
   return (
-    <main className="pt-20 md:pt-24">
+    <main className="">
       {/* HERO SECTION */}
       <HeroSection />
       
