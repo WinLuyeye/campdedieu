@@ -37,7 +37,7 @@ export default function TemoignagesSection() {
           className="text-center mb-14"
         >
           <span className="text-[#980d0e] font-semibold text-sm uppercase tracking-wider">
-            💬 Ils Parlent de Nous
+            Ils Parlent de Nous
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#08367a] mt-2">
             Ce Que Nos Membres Disent

@@ -46,7 +46,7 @@ export default function ActivitesSection() {
           className="text-center mb-14"
         >
           <span className="text-[#980d0e] font-semibold text-sm uppercase tracking-wider">
-            📆 Au-delà des Cultes
+            Au-delà des Cultes
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#08367a] mt-2">
             Nos Activités
