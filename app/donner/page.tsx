@@ -26,8 +26,8 @@ const fadeInRight = {
 export default function DonationPage() {
   return (
     <main className="min-h-screen bg-gray-50">
-            {/* Section 4: Hero/Bannière finale */}
-      <section className="relative py-20 lg:py-28 bg-[#08367a] overflow-hidden">
+      {/* Section 4: Hero/Bannière finale - CENTRÉE VERTICALEMENT ET HORIZONTALEMENT */}
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-[#08367a] overflow-hidden pt-12">
         {/* Formes décoratives */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid-pattern.svg')] bg-repeat"></div>
@@ -72,9 +72,9 @@ export default function DonationPage() {
         </div>
       </section>
 
-            {/* Section 3: Méthodes de don (Cartes) */}
+      {/* Section 3: Méthodes de don (Cartes) */}
       <section id="ensavoirplus" className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 container mx-auto px-4 md:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Carte 1 - Paiement en ligne */}
             <DonationCard
@@ -110,8 +110,8 @@ export default function DonationPage() {
       </section>
 
       {/* Section 1: Don en Nature (Formulaire) */}
-      <section id="Nature" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="container mx-auto px-4 md:px-6">
+      <section id="Nature" className="py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             {/* Colonne gauche - Texte et image */}
             <motion.div
@@ -165,7 +165,7 @@ export default function DonationPage() {
 
       {/* Section 2: Coordonnées Bancaires */}
       <section id="Banque" className="py-16 lg:py-24 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 container mx-auto px-4 md:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Colonne gauche - Images */}
             <motion.div

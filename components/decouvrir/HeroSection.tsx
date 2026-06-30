@@ -7,7 +7,7 @@ import { FaPlay, FaArrowDown } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden p-12">
       {/* Image de fond */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-[#08367a]/90 to-[#08367a]/70 z-10"></div>
@@ -20,24 +20,24 @@ export default function HeroSection() {
       </div>
 
       {/* Contenu */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full flex justify-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl"
+          className="max-w-3xl text-center"
         >
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             Découvrez une
             <span className="text-[#cf9001] block">communauté vivante</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/90 mt-6 max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 mt-6 max-w-2xl mx-auto leading-relaxed">
             Un lieu où la parole de Dieu transforme des vies, où la communauté grandit 
             dans l'amour et où chacun trouve sa place pour servir et être servi.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap gap-4 mt-8 justify-center">
             <Link
               href="#cultes"
               className="bg-[#980d0e] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#7a0b0c] transition-all hover:scale-105 flex items-center gap-2"
